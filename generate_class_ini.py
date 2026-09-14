@@ -60,6 +60,7 @@ def write_class_ini(cfg, gauge, path):
     "N_idr = 0           # zeroed: twin wrapper sets dark radiation internally",
     "",
     "# --- output ---",
+    f"root = output/class/{cfg['run']['name']}_{gauge}_",
     f"z_pk = {p['z_pk']}",
     "output = dTk vTk mPk",
     f"gauge = {gauge}",

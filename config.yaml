@@ -24,3 +24,6 @@ class:
 
 run:
   name: m10q_slow
+
+paths:
+  class_exe: /home/fairser4/links/scratch/class_adm-3.1
