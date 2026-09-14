@@ -1,0 +1,26 @@
+# config.yaml 
+# CLASS-stage inputs (cosmology + aDM microphysics)
+
+cosmology:
+  h: 0.702                    # dimensionless hubble parameter, H0 = 100h km/s/Mpc
+  Omega_m: 0.272              # total matter density, (CDM + baryons + aDM) / critical
+  Omega_b: 0.0455             # baryon density / critical
+  n_s: 0.961                  # scalar spectral index (primordial power-law tilt)
+  sigma_8: 0.807              # amplitude of matter fluctuations in 8 Mpc/h spheres
+  T_cmb: 2.725                # CMB temperature today [K]
+
+adm: 
+  f_adm: 0.06                 # Omega_adm / Omega_dm
+  m_p_ratio: 1.0              # dark proton mass / SM proton mass
+  m_e_ratio: 3.0              # dark electron mass / SM electron mass
+  alpha_dark_ratio: 0.41      # dark/SM fine structure constant ratio
+  xi: 0.1                     # T_dark / T_cmb today
+
+  YHe_twin: 0.0               # dark helium mass fraction (0 = pure dark hydrogen)
+  z_start: 99                 # initial redshift
+
+class:
+  P_k_max: 40.0               # CLASS P_k_max_h/Mpc; raise for higher-resolution boxes
+
+run:
+  name: m10q_fast
