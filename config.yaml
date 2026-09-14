@@ -12,8 +12,8 @@ cosmology:
 adm: 
   f_adm: 0.06                 # Omega_adm / Omega_dm
   m_p_ratio: 1.0              # dark proton mass / SM proton mass
-  m_e_ratio: 3.0              # dark electron mass / SM electron mass
-  alpha_dark_ratio: 0.41      # dark/SM fine structure constant ratio
+  m_e_ratio: 10.0              # dark electron mass / SM electron mass
+  alpha_dark_ratio: 0.22      # dark/SM fine structure constant ratio
   xi: 0.1                     # T_dark / T_cmb today
 
   YHe_twin: 0.0               # dark helium mass fraction (0 = pure dark hydrogen)
@@ -23,4 +23,4 @@ class:
   P_k_max: 40.0               # CLASS P_k_max_h/Mpc; raise for higher-resolution boxes
 
 run:
-  name: m10q_fast
+  name: m10q_slow
