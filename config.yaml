@@ -19,6 +19,19 @@ adm:
   YHe_twin: 0.0               # dark helium mass fraction (0 = pure dark hydrogen)
   z_start: 99                 # initial redshift
 
+halo:
+  box: 5.0                    # box size [Mpc/h]
+  levelmin: 7                 # coarse base grid level (2^levelmin per side)
+  levelmax: 11                # finest zoom level (aDM run uses levelmax-1 automatically)
+  seeds:                      # white noise seeds per level
+    9: 438290
+    10: 438290
+    11: 438290
+  region_type: convex_hull    # convex hull or ellipsoid
+  region_point_file: m10q_lr_pts    # path to the lagrangian region points
+  region_point_shift: [55, 14, 56]  # shift aligning the points to the box
+  region_point_levelmin: 7          # level the shift refers to
+
 class:
   P_k_max: 40.0               # CLASS P_k_max_h/Mpc; raise for higher-resolution boxes
 
